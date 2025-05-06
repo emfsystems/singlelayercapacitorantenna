@@ -1,0 +1,16 @@
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+
+# Ignore MATLAB autosave and backup files
+*.asv
+*.m~
+*.mat~
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore hidden system folders
+__MACOSX/
