@@ -1,141 +1,92 @@
-# 🛁 SingleLayerCapacitorAntenna\_new Class Repository
+# Single Layer Capacitor-Based Antenna (SLC Antenna) MATLAB Library
 
-**Compact, High-Efficiency Antenna Modeling and Simulation Toolkit**
-
-&#x20;&#x20;
-
----
-
-## 🚀 Introduction
-
-The `SingleLayerCapacitorAntenna_new` MATLAB class provides an end-to-end framework for modeling, analyzing, and simulating **single-layer capacitor-based antennas (SLC antennas)** — a disruptive technology in wireless communication miniaturization.
-
-With capabilities ranging from microstrip feed modeling to full radiation pattern computation and reception simulation, this library supports a wide range of academic, industrial, and research applications.
-
-This repository is actively maintained by [**EMF Systems**](https://emfsystems.africa).
+[![Built with MATLAB](https://img.shields.io/badge/Built%20with-MATLAB-blue?logo=mathworks&logoColor=white)](https://www.mathworks.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Project Status](https://img.shields.io/badge/status-active-brightgreen.svg)](#)
+[![Website](https://img.shields.io/badge/Website-emfsystems.africa-blue)](https://emfsystems.africa)
 
 ---
 
-## 🎯 Key Features
+## Overview
 
-* 🛁 **Single Element and Multi-Element Array Modeling**
-* 🔗 **Microstrip Feed Line and Lumped Element Integration**
-* 🌎 **Ground-Plane Reflection (Image Theory) Support**
-* 📈 **S-Parameter and Impedance Analysis**
-* 🧐 **Receive-Mode Simulation for Incoming Plane Waves**
-* 📊 **3D Radiation Patterns, Directivity, Gain, and Efficiency Computation**
-* 📚 **Exportable Pattern Data and S-Parameter Files (.s1p)**
-* 🛠️ **Extendable for WiFi, 5G, Satellite, IoT Communication Systems**
+This project provides a professional MATLAB modeling and simulation library for Single Layer Capacitor-Based Antennas (SLC Antennas).  
+It includes:
 
----
-
-## 🛠 Installation
-
-* MATLAB **R2021b** or later is recommended
-* Optional but recommended: **Antenna Toolbox**
-* Clone the repository:
-
-  ```bash
-  git clone https://github.com/emfsystems/SingleLayerCapacitorAntenna.git
-  ```
-* Add the `src/` folder to your MATLAB path.
+- A fully-featured object-oriented MATLAB class
+- Basic examples demonstrating single-element, rectangular array, and compound array configurations
+- Structured framework for expanding into real-world wireless communication and scientific sensing research
+- Research-ready folder structure for advanced simulation studies (WiFi, 5G, Satellite, IoT, Radar, Deep-Space Communications)
 
 ---
 
-## 🧪 Usage Examples
+## 📚 Table of Contents
 
-| Example                                                                                      | Description                                            |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [`examples/basic/example1_single_element.m`](examples/basic/example1_single_element.m)       | Single antenna setup (2.4 GHz) with radiation analysis |
-| [`examples/basic/example2_rectangular_array.m`](examples/basic/example2_rectangular_array.m) | 8-element 2×4 array configuration                      |
-| [`examples/basic/example3_compound_array.m`](examples/basic/example3_compound_array.m)       | 4 subarrays (2×2 elements each), multi-port feeding    |
-
-> See more upcoming system-level integrations under [`research/`](research/).
-
----
-
-## 📚 Full Documentation
-
-Detailed class documentation is available here:
-
-* [`docs/Full_Documentation.md`](docs/Full_Documentation.md)
-
-Covers:
-
-* Class architecture
-* Object properties and methods
-* Usage workflows
-* Equations and physical modeling
-* Code snippets
+- [Installation](#installation)
+- [Basic Examples](#basic-examples)
+- [Documentation](#documentation)
+- [Research Extensions](#research-extensions)
+- [License](#license)
+- [Contributing](#contributing)
 
 ---
 
-## 🌍 Technology Impact
+## 🚀 Installation
 
-The SLC Antenna has been shown to deliver:
+Simply download or clone the repository:
 
-* **High radiation efficiency (97–99%)**
-* **Wide bandwidth (kHz–20 GHz)**
-* **Miniaturization advantages for wireless modules**
-
-See the market and technological impact analysis:
-
-* [`docs/Impact_Analysis_Summary.md`](docs/Impact_Analysis_Summary.md)
-
----
-
-## 🔥 Upcoming Extensions
-
-This repository is growing into a major resource for SLC antenna integration into real-world wireless technologies:
-
-* WiFi access points and mesh networks
-* 5G massive MIMO systems
-* Satellite communications (LEO, MEO, GEO)
-* IoT gateway devices
-* LPWAN (LoRa, NB-IoT) systems
-* radio astronomy and deep space communication systems
-
-View the development roadmap:
-
-* [`research/planned_studies.md`](research/planned_studies.md)
-
----
-
-## 🏷 License
-
-Distributed under the **MIT License**.
-See [`LICENSE`](LICENSE) for more information.
-
----
-
-## 🧠 Citation
-
-If you use this library in your research, please cite:
-
-```
-@misc{slc_antenna_2025,
-  author = {EMF Systems},
-  title = {Single Layer Capacitor-Based Antenna Modeling Toolkit},
-  year = {2025},
-  url = {https://github.com/emfsystems/SingleLayerCapacitorAntenna}
-}
+```bash
+git clone https://github.com/emfsystems/singlelayercapacitorantenna.git
 ```
 
-You can also reference our white paper:
-
-> A. Gachahi et al., "Revolutionizing Wireless Communication with Single Layer Capacitor-Based Antenna Technology", arXiv:2403.01170.
+Then add the `/src/` folder to your MATLAB path.
 
 ---
 
-## 🌐 Connect with Us
+## 🧹 Basic Examples
 
-For latest updates, development kits, and more advanced simulations:
+Find starter examples in `/examples/basic/`:
 
-* Visit [**EMF Systems Official Website**](https://emfsystems.africa)
-* Follow us on [LinkedIn](https://www.linkedin.com/emf systems)
+- `example1_single_element.m` — Single antenna element setup at 2.4 GHz
+- `example2_rectangular_array.m` — 8-element rectangular array
+- `example3_compound_array.m` — Compound array made of 4 subarrays
+
+Each example demonstrates geometry creation, radiation pattern simulation, efficiency analysis, and gain calculation.
 
 ---
 
-## 📷 Example Outputs
+## 📖 Full Documentation
 
-*Example radiation pattern from a 4x4 SLC compound array:*
+Complete documentation is available under `/docs/`:
+
+- [Full Documentation](docs/full_documentation.md)
+- [Impact Analysis Summary](docs/Impact_Analysis_Summary.md)
+- [References](docs/References.md)
+
+---
+
+## 🔬 Research Extensions
+
+Future simulation studies (under `/research/`) will include:
+
+- WiFi Mesh Networks (long-range)
+- 5G Beamforming and Massive MIMO
+- Satellite and Deep-Space Communication Links
+- LoRa LPWAN IoT Gateways
+- Imaging, Radar Sensors, and Radio Astronomy Applications
+
+---
+
+## 🛡️ License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🤝 Contributing
+
+We welcome collaboration!
+
+- Suggest improvements by opening an Issue.
+- Submit Pull Requests for fixes, new examples, or expanded research studies.
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
